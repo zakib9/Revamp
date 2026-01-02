@@ -10,8 +10,9 @@ const CustomButton: React.FC<CustomButtonProps> = ({ text }) => {
         <button
         className=" relative 
         overflow-hidden  rounded-full
-             bg-secondary text-primary border border-secondary
-              group">
+             bg-secondary text-primary 
+             border border-secondary
+              group font-medium text-lg">
         
         <span
           className="absolute inset-0 bg-primary
@@ -21,7 +22,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({ text }) => {
                 transition-all duration-400 ease-in-out">
         </span>
 
-        <span className="relative px-6 py-3 z-10 group-hover:text-secondary 
+        <span className="relative px-6 py-5 z-10 group-hover:text-secondary 
         transition-colors duration-300 flex justify-center items-center gap-2">
           {text}
           <SlArrowRight />
