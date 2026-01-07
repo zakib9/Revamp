@@ -9,3 +9,29 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes subtle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.subtle-bounce {
+  animation: subtle-bounce 3s ease-in-out infinite;
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.infinite-scroll {
+  animation: infinite-scroll 30s linear infinite;
+}
+

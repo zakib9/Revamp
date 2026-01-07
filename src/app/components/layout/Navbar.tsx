@@ -15,7 +15,7 @@ const Navbar = () => {
         <Link href="#pricing">Pricing</Link>
         <Link href="#contact">Contact</Link>
       </div>
-      <CustomButton text='Start Free Trail' />
+      <CustomButton bgColor='bg-secondary' bgHover='bg-primary' text='Start Free Trail' />
       
 
 
