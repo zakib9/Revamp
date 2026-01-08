@@ -2,12 +2,13 @@ import { SlArrowRight } from "react-icons/sl"
 import React from 'react'
 
 interface CustomButtonProps {
-  text: string;
+  text?: string;
   bgColor: string;
   bgHover: string;
+  className?: string;
 }
 
-const CustomButton: React.FC<CustomButtonProps> = ({ text, bgColor, bgHover }) => {
+const CustomButton: React.FC<CustomButtonProps> = ({ text, bgColor, bgHover, className }) => {
     return (
      
         <button
@@ -15,7 +16,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({ text, bgColor, bgHover }) =
           overflow-hidden  rounded-full
                ${bgColor} text-primary 
                border border-secondary
-                group font-medium text-lg cursor-pointer`}>
+                group font-medium text-lg cursor-pointer ${className}`}>
          
         <span
           className={`absolute inset-0 ${bgHover}

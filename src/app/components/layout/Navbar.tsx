@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className='text-4xl font-thin'>Revamp</div>
       <div className='flex justify-center items-center gap-8'>
         <Link href="#about">About</Link>
-        <Link href="#programs">Programs</Link>
+        <Link href="#services">Services</Link>
         <Link href="#trainers">Team</Link>
         <Link href="#pricing">Pricing</Link>
         <Link href="#contact">Contact</Link>
