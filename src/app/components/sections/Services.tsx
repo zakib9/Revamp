@@ -1,8 +1,12 @@
-import CustomButton from "../CustomButton"
+import Slider from "../Slider"
+
 
 
 
 const Services = () => {
+  
+ 
+ 
   return (
     <section id="services" className="scroll-mt-24 h-screen bg-primary">
     <div className=" bg-linear-to-l from-secondary/25
@@ -21,16 +25,10 @@ const Services = () => {
          is unique, and what works for one person may not work for another.
           That’s why we provide a wide range of services tailored to different
            goals, lifestyles, and fitness levels</p>
-      </div>
-      
-     <div className=" row-span-3  col-span-2 grid gap-4 grid-cols-2 h-full">
-      <div className=" h-full col-span-1 rounded-2xl bg-blue-200"></div>
-      <div className=" h-full col-span-1 rounded-2xl bg-blue-900"></div>
-     </div>
-     <div className=" row-span-1 col-span-2 flex mx-auto gap-4">
-     <CustomButton  className=" py-1 rotate-180" bgColor="bg-secondary" bgHover="bg-primary"/>
-     <CustomButton  className=" py-1" bgColor="bg-secondary" bgHover="bg-primary"/>
-     </div>
+      </div >
+       
+          <Slider/>
+        
      </div>
      </div>
   </section>

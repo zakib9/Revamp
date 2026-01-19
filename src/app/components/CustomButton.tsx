@@ -6,12 +6,14 @@ interface CustomButtonProps {
   bgColor: string;
   bgHover: string;
   className?: string;
+  onClick?: () => void ;
 }
 
-const CustomButton: React.FC<CustomButtonProps> = ({ text, bgColor, bgHover, className }) => {
+const CustomButton: React.FC<CustomButtonProps> = ({onClick ,text, bgColor, bgHover, className }) => {
     return (
      
         <button
+        onClick={onClick}
         className={`relative 
           overflow-hidden  rounded-full
                ${bgColor} text-primary 
